@@ -30,3 +30,9 @@ func main() {
 }
 ```
 If you use the type keyword, it is only possible to declare one type of variable per line.
+
+## Constants:
+* Constant Rules:
+    - Constant names follow the same naming rules as variables
+    - Constant names are usually written in uppercase letters (for easy identification and differentiation from variables)
+    - Constants can be declared both inside and outside of a function
