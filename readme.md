@@ -132,3 +132,33 @@ slice3 := append(slice1, slice2...)
 // Note: The '...' after slice2 is necessary when appending the elements of one slice to another.
 // don't forget to use := for that
 ```
+
+## Loop:
+- The for loop is the only loop available in Go.
+```
+for statement1; statement2; statement3 {
+   // code to be executed for each iteration
+}
+```
+
+- The **Range** Keyword: 
+ - It returns both the index and the value.
+  ```
+  for index, value := array|slice|map {
+    // code to be executed for each iteration
+  }
+  ```
+
+  - To only show the value or the index, you can omit the other output using an underscore (_).
+  ```
+  // it shows only value
+  for _, value := array|slice|map {
+    // code to be executed for each iteration
+  }
+
+  // it shows only index
+  for index, _ := array|slice|map {
+    // code to be executed for each iteration
+  }
+  ```
+
