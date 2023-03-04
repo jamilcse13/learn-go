@@ -141,15 +141,15 @@ for statement1; statement2; statement3 {
 }
 ```
 
-- The **Range** Keyword: 
- - It returns both the index and the value.
+ The **Range** Keyword: 
+- It returns both the index and the value.
   ```
   for index, value := array|slice|map {
     // code to be executed for each iteration
   }
   ```
 
-  - To only show the value or the index, you can omit the other output using an underscore (_).
+- To only show the value or the index, you can omit the other output using an underscore (_).
   ```
   // it shows only value
   for _, value := array|slice|map {
@@ -162,3 +162,35 @@ for statement1; statement2; statement3 {
   }
   ```
 
+## Function:
+- Create a Function:
+  ```
+  func FunctionName() {
+    // code to be executed
+  }
+  ```
+
+- Parameters and Arguments:
+  ```
+  func FunctionName(param1 type, param2 type, param3 type) {
+    // code to be executed
+  }
+  ```
+
+- Return Values:
+  - If you want the function to return a value, you need to define the data type of the return value (such as int, string, etc), and also use the return keyword inside the function:
+  ```
+  func FunctionName(param1 type, param2 type) type {
+    // code to be executed
+    return output
+  }
+  ```
+
+  - Named Return Values:
+  ```
+  func FunctionName(param1 type, param2 type) (name type) {
+    // code to be executed
+    name = param1 + param 2
+    return
+  }
+  ```
