@@ -210,4 +210,46 @@ A struct can be useful for grouping data together to create records.
     member3 datatype;
     ...
   }
-```
+  ```
+
+## Maps:
+- Creating Maps Using var and := :
+  ```
+  var a = map[keyType]valueType{key1:value1, key2:value2, ...}
+  a := map[keyType]valueType{key1:value1, key2:value2, ...}
+  ```
+- Creating Empty Maps Using make() Function:
+  ```
+  var a = make(map[KeyType]ValueType)
+  b := make(map[KeyType]ValueType)
+
+  var c = map[KeyType]ValueType
+  ```
+Note: The make()function is the right way to create an empty map.
+
+- Accessing Map Elements:
+  ```
+  value = map_name[key]
+  ```
+
+- Add or Update Elements:
+  ```
+  map_name[key] = value
+  ```
+
+- Remove Element from Map:
+  ```
+  delete(map_name, key)
+  ```
+
+- Check For Specific Elements in a Map:
+  ```
+  // ok returns (bool): is the key exists?
+  val, ok := map_name[key]
+  ```
+
+- Maps Are References
+  - Maps are references to hash tables.
+  - If two map variables refer to the same hash table, changing the content of one variable affect the content of the other.
+
+
