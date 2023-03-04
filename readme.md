@@ -92,3 +92,43 @@ arr1 := [5]int{1:10,2:40}
 
   - 1:10 means: assign 10 to array index 1 (second element).
   - 2:40 means: assign 40 to array index 2 (third element).
+
+
+## Slice:
+- Slices are similar to arrays, but are more powerful and flexible.
+- Unlike arrays, the length of a slice can grow and shrink as you see fit.
+- It has declared like Array
+```
+slice_name = []datatype{}
+
+my_slice := []int{}
+```
+The code above declares an empty slice of 0 length and 0 capacity.
+
+In Go, there are two functions that can be used to return the length and capacity of a slice:
+  - **len()** function - returns the length of the slice (the number of elements in the slice)
+  - **cap()** function - returns the capacity of the slice (the number of elements the slice can grow or shrink to)
+
+* Create a Slice From an Array:
+```
+var my_array = [length]datatype{values}   // An array
+my_slice := myarray[start:end]   // A slice made from the array
+```
+
+* Create a Slice With The **make()** Function:
+```
+slice_name := make([]type, length, capacity)
+// If the capacity parameter is not defined, it will be equal to length.
+```
+
+* Append Elements To a Slice:
+```
+slice_name = append(slice_name, element1, element2, ...)
+```
+
+* Append One Slice To Another Slice:
+```
+slice3 := append(slice1, slice2...)
+// Note: The '...' after slice2 is necessary when appending the elements of one slice to another.
+// don't forget to use := for that
+```
